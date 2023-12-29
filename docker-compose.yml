@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  passport:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:9090"
+    restart: unless-stopped
