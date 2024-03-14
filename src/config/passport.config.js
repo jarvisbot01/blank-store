@@ -10,7 +10,7 @@ const microsoftGraphAuth = new OAuth2Strategy(
     tokenURL: "https://login.microsoftonline.com/common/oauth2/v2.0/token",
     clientID: config.microsoft_client_id,
     clientSecret: config.microsoft_client_secret,
-    callbackURL: "http://localhost:9090/auth/callback",
+    callbackURL: "https://google.com/", // URL de redirección después de la autenticación
     scope: ["user.read", "mail.read"], // Especifica los permisos necesarios
   },
   function (accessToken, refreshToken, profile, done) {

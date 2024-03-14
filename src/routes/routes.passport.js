@@ -13,7 +13,7 @@ router.get(
   passport.authenticate("oauth2", { failureRedirect: "/login" }),
   (req, res) => {
     // Autenticación exitosa, redirigir a la página principal del frontend
-    res.redirect("http://localhost:9090/");
+    res.redirect("https://google.com/");
   }
 );
 
